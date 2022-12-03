@@ -1,0 +1,31 @@
+version: '3.5'
+
+services:
+  casino:
+    build: ./src/dice_emulator
+    container_name: casino
+    restart: always
+    command: python api.py
+    networks:
+      custom_network:
+        ipv4_address: 10.5.0.2
+    expose:
+      - '5432'
+
+  player:
+    build: ./src/player_emulator
+    container_name: player
+    command: python cli.py start-player --strategy all
+    network_mode: bridge
+    networks:
+      custom_network:
+        ipv4_address: 10.5.0.3
+    depends_on:
+      - casino
+
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.5.0.0/16
