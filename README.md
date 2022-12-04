@@ -12,6 +12,12 @@
 - all
 
 
-##### Вероятностные распределния для кубиков расположены в *src/dice_emulator/probability_distributions.json*
+##### Вероятностные распределния для кубиков расположены:
+```
+src/dice_emulator/probability_distributions.json
+```
 
-##### Для запуска приложения следует в терминале ввести команду *docker-compose up*
+##### Для запуска приложения следует в терминале ввести команду:
+```
+docker-compose up
+```
