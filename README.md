@@ -13,3 +13,5 @@
 
 
 ##### Вероятностные распределния для кубиков расположены в *src/dice_emulator/probability_distributions.json*
+
+##### Для запуска приложения следует в терминале ввести команду *docker-compose up*
