@@ -12,4 +12,4 @@
 - all
 
 
-#### Вероятностные распределния для кубиков расположены в *src/dice_emulator/probability_distributions.json*
+##### Вероятностные распределния для кубиков расположены в *src/dice_emulator/probability_distributions.json*
