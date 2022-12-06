@@ -16,7 +16,6 @@ services:
     build: ./src/player_emulator
     container_name: player
     command: python cli.py start-player --strategy all
-    network_mode: bridge
     networks:
       custom_network:
         ipv4_address: 10.5.0.3
