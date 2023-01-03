@@ -1,23 +1,23 @@
 # casino-emulator
 
-#### Приложение, которое решает задачу [многорукого бандита](https://en.wikipedia.org/wiki/Multi-armed_bandit) на примере игральных кубиков. Рассмотрены два способа:
+#### Application for solving [the Multi-Armed Bandit problem](https://en.wikipedia.org/wiki/Multi-armed_bandit). Considered two ways of solving:
 
 - Epsilon greedy
 - Thompson sampling
 
-#### Есть три различные стратегии при запуске (задается в файле docker-compose.yaml в сервисе player)
+#### There are three strategies to run programm (should be set in docker-compose.yaml in the player service)
 
 - epsilon_greedy
 - thompson_sampling
 - all
 
 
-##### Вероятностные распределния для кубиков расположены:
+##### Path to the dice probability distributions:
 ```
 src/dice_emulator/probability_distributions.json
 ```
 
-##### Для запуска приложения следует в терминале ввести команду:
+##### To start application you should run:
 ```
 docker-compose up
 ```
